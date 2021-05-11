@@ -9,7 +9,7 @@ export default {
   methods: {
     ...mapActions(['setLoginAction']),
     Logout() {
-      this.setLoginAction('');
+      this.setLoginAction(false);
       this.$router.push('/');
     },
   },
